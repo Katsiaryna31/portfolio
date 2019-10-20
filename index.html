@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="portfolio-header visually-hidden">My portfolio</h1>
+    <section class="introduction">
+        <h2 class="introduction__header visually-hidden">About me</h2>
+        <div class="description">
+            <h3 class="description__name">Katsiaryna Yakubouskaya</h3>
+            <ul class="description__list">
+                <li class="description__item">
+                    <a href="https://github.com/Katsiaryna31">Github</a>
+                </li>
+                <li class="description__item">
+                    <a href="https://www.linkedin.com/in/katsiaryna-y-b8b6ab186/">LinkedIn</a>
+                </li>
+                <li class="description__item">
+                    <a href="https://www.facebook.com/Katia.Kopyrkina">Facebook</a>
+                </li>
+            </ul>
+        </div>
+        <div class="image">
+            <img class="image__photo" src="images/photo.jpg" width="250" height="250" alt="Photo">
+        </div>
+    </section>
+    <section class="education">
+        <h2 class="education__header visually-hidden">My education</h2>
+        <div class="education__panel">
+            <p>Education</p>
+            <button class="education__button" id="expansion-open">
+                <img src="images/expand.svg" width="40" height="30" alt="arrow">
+            </button>
+        </div>
+        <ul id="education-list" class="education__list--close">
+            <li class="education__item">
+                <p class="education__item-name">School №30 Brest</p>
+                <p class="education__item-years">1997-2006</p>
+            </li>
+            <li class="education__item">
+                <p class="education__item-name">Lyceum №1 Brest</p>
+                <p class="education__item-years">2006-2008</p>
+            </li>
+            <li class="education__item">
+                <p class="education__item-name">Belarussian State Technological University</p>
+                <p class="education__item-years">2008-2013</p>
+            </li>
+            <li class="education__item">
+                <p class="education__item-name">HTML Academy Courses</p>
+                <p class="education__item-years">2018-2019</p>
+            </li>
+            <li class="education__item">
+                <p class="education__item-name">RSSchool Courses</p>
+                <p class="education__item-years">2019-2020</p>
+            </li>
+        </ul>
+    </section>
+    <section class="projects">
+        <h2 class="projects__header">Projects</h2>
+        <div id="slider" class="slider">
+            <div class="slider__wrapper slider__wrapper--active">
+                <div class="slider__block">
+                    <h3 class="slider__block-name">The yalow</h3>
+                    <ul class="slider__block-list">
+                        <li class="slider__block-item">adaptive;</li>
+                            <li class="slider__block-item">svg-images;</li>
+                    </ul>
+                    <div class="slider__block-pointer">Click on image to see the project</div>
+                </div>
+                <div class="slider__image">
+                    <a href="theyalow/index.html">
+                        <img class="slider__block-image" src="images/theyalow.png" width="820" height="367" alt="the yalow">
+                    </a>
+                </div>
+            </div>
+            <div class="slider__wrapper">
+                <div class="slider__block">
+                    <h3 class="slider__block-name">Repair-design-project</h3>
+                    <ul class="slider__block-list">
+                        <li class="slider__block-item">responsive;</li>
+                            <li class="slider__block-item">scss-preprocessor;</li>
+                    </ul>
+                    <div class="slider__block-pointer">Click on image to see the project</div>
+                </div>
+                <div class="slider__image">
+                    <a href="repair-design-project/index.html">
+                        <img class="slider__block-image" src="images/repair-design.png" width="820" height="367" alt="repair-design-project">
+                    </a>
+                </div>
+            </div>
+            <button class="slider__change slider__change--left">&lt</button>
+            <button class="slider__change slider__change--right">&gt</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
