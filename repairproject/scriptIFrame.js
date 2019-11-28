@@ -16,7 +16,6 @@ const changeVersion = () => {
         container.style.width = '100%';
         container.style.margin = '0 auto';
     } else {
-        desktopButton.classList.add('version--active');
         mobileButton.classList.remove('version--active');
         iframe.style.height = '9168px';
         container.style.width = '375px';
