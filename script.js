@@ -155,7 +155,7 @@ images.forEach((img)=> {
       if (img === images[0]) {
         location.href = "theyalow/iframe.html";
       } else {
-        location.href = "repair-design-project/iframe.html";
+        location.href = "repairproject/iframe.html";
       }  
     }
   
