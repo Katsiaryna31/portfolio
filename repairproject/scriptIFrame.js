@@ -11,14 +11,18 @@ iframe.style.height = '10078px';
 
 const changeVersion = () => {
     if (desktopButton.classList.contains('version--active')) {
-        desktopButton.classList.remove('version--active');
-        mobileButton.classList.add('version--active');
+      desktopButton.classList.remove('version--active');
+      desktopButton.classList.remove('version--hidden');
+      mobileButton.classList.add('version--active');
+      mobileButton.classList.remove('version--hidden');
         iframe.style.height = '10078px';
         container.style.width = '100%';
         container.style.margin = '0 auto';
     } else {
-        mobileButton.classList.remove('version--active');
-        desktopButton.classList.add('version--active');
+      mobileButton.classList.remove('version--active');
+      mobileButton.classList.add('version--hidden');
+      desktopButton.classList.add('version--active');
+      desktopButton.classList.remove('version--hidden');
         iframe.style.height = '9168px';
         container.style.width = '375px';
         container.style.margin = '0 auto';
@@ -33,6 +37,8 @@ if (window.screen.width <= 1440) {
     backButton.style.right = '18px';
     backButton.style.top = '70%';
     desktopButton.classList.remove('version--active');
+    desktopButton.classList.add('version--hidden');
     mobileButton.classList.remove('version--active');
+    mobileButton.classList.add('version--hidden');
     container.style.width === window.screen.width;
 }

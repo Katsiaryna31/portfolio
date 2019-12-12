@@ -8,30 +8,32 @@
     text-transform: uppercase;
     background-color: #c8cac9;
   }
-  
+
   .button:hover,
   .button:active {
     background-color: #979797;
   }
-  
+
   .back-button {
     top: 40%;
     padding: 20px 45px;
     text-decoration: none;
     color: #111111;
   }
-  
+
   .desktop-button {
     top: 55%;
-    display: none;
   }
-  
+
   .mobile-button {
     top: 55%;
     padding: 20px 32px;
-    display: none;
   }
-  
+
   .version--active {
     display: block;
+  }
+
+  .version--hidden {
+    display: none;
   }
